@@ -9,8 +9,12 @@ module.exports = override(
     addLessLoader({
         javascriptEnabled: true,
         modifyVars: {
-            '@primary-color': "#1E1E2C",
-            '@layout-header-background': "#1E1E2C"
         },
     }),
 );
+
+/**
+ * modifyVars
+            '@primary-color': "#1E1E2C",
+            '@layout-header-background': "#1E1E2C"
+ */

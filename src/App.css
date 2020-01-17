@@ -1,7 +1,42 @@
-@import './Tools/Typography.css';
+/* @import './Tools/Typography.css'; */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+
+:root{
+    --trueDark : "#1E1E2C";
+    --dark:"#2D2D44";
+    --Hblue:"#33E1ED";
+    --light:"#FFF";
+}
+
+.Title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    color: var(--Hblue);
+}
+
+.Subtitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+.Text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
 }
