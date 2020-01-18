@@ -48,11 +48,6 @@ export default function LeftToRightSection(){
         filter: grayscale(100%);
     `;
 
-    const Logo = styled.image`
-        width: 40px;
-        height: 40;
-    `;
-
     return (
         <Container>
             <Section>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Row , Col , Button , Icon} from 'antd';
 
-export default function LeftToRightSection(props){
+export default function RightToLeftSection(props){
     const Container = styled(Row)`
         height: 90vh;
         padding: 0 80px 0 80px;
@@ -18,6 +18,9 @@ export default function LeftToRightSection(props){
 
     return (<Container>
                 {props.Data.haveQutes.quote &&  props.Data.haveQutes.value}
+                <Section span={12}>
+                    <img src={props.Data.icon} alt="community" width={500} height={500} />
+                </Section>
                 {/* <Quote style={{marginTop:"90px"}}>
                     <Text className="Title">Don't forget who we are</Text>
                     <Text className="Text">PATIENT LED US HERE</Text>
@@ -31,9 +34,6 @@ export default function LeftToRightSection(props){
                 <h2 className="Text" >{props.Data.content}</h2>
                     <Button style={{marginTop: "20px" , width: "140px" }} size="large" >{props.Data.calloutButtonAction}<Icon icon="bulb" type="right"/></Button>
                     </div>
-                </Section>
-                <Section span={12}>
-                    <img src={props.Data.icon} alt="community" width={450} height={450} />
                 </Section>
             </Container>);
 }

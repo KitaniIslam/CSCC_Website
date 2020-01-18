@@ -1,5 +1,5 @@
 import React from 'react';
-import {Layout, Menu} from 'antd';
+import {Layout} from 'antd';
 import styled from 'styled-components';
 import Colors from '../../Tools/Colors'
 
@@ -9,9 +9,9 @@ export default function Navbar(){
         /* background-color: ${Colors.trueDark} !important; */
     `;
 
-    const StyledMenu = styled(Menu)`
-    /* background-color: ${Colors.trueDark} !important; */
-    `;
+    // const StyledMenu = styled(Menu)`
+    // /* background-color: ${Colors.trueDark} !important; */
+    // `;
 
 
     return ( <StyledHeader className="header">
