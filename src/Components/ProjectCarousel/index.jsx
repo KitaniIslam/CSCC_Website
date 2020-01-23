@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Carousel, Icon} from 'antd';
+import {Carousel, Icon, Button} from 'antd';
 const bg = require('../../Images/bg.jpg');
+const develop = require('../../Images/develop.jpg');
+const embedded = require('../../Images/embedded.jpg');
+const design = require('../../Images/design.jpg');
 
 export default function ProjectCarousel(props){
 
@@ -10,7 +13,7 @@ export default function ProjectCarousel(props){
         flex:1;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 90vh;
         width: 100%
         flex-direction: row;
         background-position: center center;
@@ -21,20 +24,52 @@ export default function ProjectCarousel(props){
 
     const Box = styled.div`
         width: 700px;
-        height: 380px ;
+        height: 400px ;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         padding: 50px 25px 50px 10px;
 
     `;
 
-    const Div= styled.div`
-         text-align: center;
+    const DevelopImage= styled.div`
+        text-align: center;
+        line-height: 300px;
         height: 300px;
-        line-height: 400px;
-        background: #364d79;
         overflow: hidden;
+        position:relative;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-image: url(${develop});
+    `;
+
+    const EmbeddedImage= styled.div`
+        text-align: center;
+        line-height: 300px;
+        height: 300px;
+        overflow: hidden;
+        position:relative;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-image: url(${embedded});
+    `;
+
+
+    const DesignImage= styled.div`
+        text-align: center;
+        line-height: 300px;
+        height: 300px;
+        overflow: hidden;
+        position:relative;
+        background-position: center center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-image: url(${design});
     `;
 
     const ProjectsTypeSection = styled.div`
@@ -46,6 +81,7 @@ export default function ProjectCarousel(props){
     `;
 
 
+
     const ProjectsType = [{icon:"code",title:"Development",main:"Cobbler's pose, bound angle webify ."},{icon:"sketch",title:"Design",main:"Cobbler's pose, bound angle webify ."},{icon:"robot",title:"Embedded",main:"Cobbler's pose, bound angle webify ."}]
 
     return (
@@ -54,7 +90,7 @@ export default function ProjectCarousel(props){
                 <div>
 
                 <h1 className="Subtitle" style={{color:"white"}}>Most popular projects.</h1>
-                <h1 className="Text" style={{color:"white"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus, eligendi minima repellendus numquam sequi omnis rem quibusdam saepe sapiente ad aut! Officiis, voluptatem! Labore ipsum ducimus odit fugit at?</h1>
+                <h1 className="Text" style={{color:"white"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis natus, eligendi minima repellendus numquam sequi omnis rem quibusdam saepe sapiente ad</h1>
                 </div>
 
 
@@ -71,38 +107,23 @@ export default function ProjectCarousel(props){
                         })}
                     </ProjectsTypeSection>
                 </div>
+                <Button ghost style={{width:"180px"}} >
+                    watch all projects
+                    <Icon type="right" />
+                </Button>
             </Box>
             {/* TODO: expose the Carousel as a separate component */}
                  <div style={{width:"500px", marginTop:"5px"}}>
-                     <Carousel autoplay>
-                         <Div>
-                         <h3>1</h3>
-                         </Div>
-                         <Div>
-                         <h3>2</h3>
-                         </Div>
-                         <Div>
-                         <h3>3</h3>
-                         </Div>
-                         <Div>
-                         <h3>4</h3>
-                         </Div>
-                         <Div>
-                         <h3>1</h3>
-                         </Div>
-                         <Div>
-                         <h3>2</h3>
-                         </Div>
-                         <Div>
-                         <h3>3</h3>
-                         </Div>
-                         <Div>
-                         <h3>4</h3>
-                         </Div>
-                     </Carousel>
+                     <Carousel autoplay dotPosition="right">
+                        <EmbeddedImage />
+                        <DevelopImage />
+                        <DesignImage />
+                    </Carousel>
                      </div>
             
         </Container>
 
     );
 }
+
+// style={{position:"relative" , right: "160px", top:"38%"}}

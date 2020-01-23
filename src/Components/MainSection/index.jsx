@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import {Row , Col} from 'antd';
 import {Button} from 'antd';
 const bg = require('../../Images/safar.jpg');
-const kitani = require('../../Images/kitani.png');
-const venusLogo  = require('../../Images/venusLogo.png');
-const netupLogo = require('../../Images/netupLogo.png');
-const univLogo = require('../../Images/univLogo.png');
-const blidacompLogo = require('../../Images/blidacompLogo.png');
-const msLogo = require('../../Images/msLogo.png');
+const kitani = require('../../Images/Logo/kitani.png');
+const venusLogo  = require('../../Images/Logo/venusLogo.png');
+const netupLogo = require('../../Images/Logo/netupLogo.png');
+const univLogo = require('../../Images/Logo/univLogo.png');
+const blidacompLogo = require('../../Images/Logo/blidacompLogo.png');
+const msLogo = require('../../Images/Logo/msLogo.png');
 
 export default function LeftToRightSection(){
     const Container = styled(Row)`
@@ -24,7 +24,7 @@ export default function LeftToRightSection(){
         background-size:cover;
         background-repeat: no-repeat;
         text-align: center;
-        background-image: linear-gradient(101deg, rgba(33,185,200,0.5), rgba(5,108,187,0.5)),url(${bg}) ;
+        background-image: linear-gradient(101deg, rgba(33,185,200,0.3), rgba(5,108,187,0.3)),url(${bg}) ;
         flex-direction: column;
     `;
     const Title = styled.h1`
@@ -52,7 +52,7 @@ export default function LeftToRightSection(){
         <Container>
             <Section>
                 <Title className="Title" style={{color: "white"}}>You can make the difference</Title>    
-                <Title className="Text" style={{color: "white"}}>Computer Science Community Club when sharing mean everything</Title>
+                <Title className="Text" style={{color: "white"}}>Computer Science Community Club, when sharing mean everything.</Title>
                 <div style={{flexDirection: "Row" , display: "flex" }}>
 
                 <Button style={{marginTop: "20px"}} size="large"  icon="phone" type="primary" block>Contact us</Button>
@@ -61,6 +61,7 @@ export default function LeftToRightSection(){
                 
                 <SponsorZone style={{zIndex: 1}}>
                     
+                    {/* <img src={cscc_logo} style={{width:"60px", height:"60px",opacity: 0.6}} alt=""/> */}
                     <img src={kitani} style={{width:"60px", height:"60px",opacity: 0.6}} alt=""/>
                     <img src={msLogo} style={{width:"140px"}} alt=""/>
                     <img src={blidacompLogo} style={{width:"140px",opacity: 0.8}} alt=""/>

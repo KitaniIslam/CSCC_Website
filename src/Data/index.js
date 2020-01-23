@@ -29,7 +29,7 @@ export default {
         title : "Computer Science Community Club." ,
         content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam temporibus possimus harum amet, eos, accusamus nemo laboriosam assumenda quia fuga! Totam, perspiciatis eum libero nostrum tempore dignissimos expedita quisquam?",
         calloutButtonAction : "Get more",
-        icon: require('../Images/team.svg') ,
+        icon: require('../Images/SVG/team.svg') ,
         haveQutes : {
             quote : true ,
             value : Quote({title:"Don't forget who we are",subtitle:"PATIENT LED US HERE"})
@@ -39,7 +39,7 @@ export default {
         title : "Let our achievement do the talking." ,
         content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam temporibus possimus harum amet, eos, accusamus nemo laboriosam assumenda quia fuga! Totam, perspiciatis eum libero nostrum tempore dignissimos expedita quisquam?",
         calloutButtonAction : "Take a look",
-        icon: require('../Images/winners.svg') ,
+        icon: require('../Images/SVG/winners.svg') ,
         haveQutes : {
             quote : false ,
             value : ''
@@ -49,7 +49,7 @@ export default {
         title : "Continuous knowledge sharing responsibility" ,
         content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam temporibus possimus harum amet, eos, accusamus nemo laboriosam assumenda quia fuga! Totam, perspiciatis eum libero nostrum tempore dignissimos expedita quisquam?",
         calloutButtonAction : "Take a look",
-        icon: require('../Images/undraw_data.svg') ,
+        icon: require('../Images/SVG/undraw_data.svg') ,
         haveQutes : {
             quote : true ,
             value : Quote({title:"We give it our best",subtitle:"SHARING IS CARING"})
