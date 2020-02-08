@@ -1,5 +1,6 @@
 import Home from './Views/Home'
 import About from './Views/About'
+import NotFound from './Views/NotFount'
 export default [{
     'path': '/',
     'component': Home
@@ -7,4 +8,8 @@ export default [{
 {
     'path': '/about',
     'component': About
+},
+{
+    'path': '/notfound',
+    'component': NotFound
 }];
